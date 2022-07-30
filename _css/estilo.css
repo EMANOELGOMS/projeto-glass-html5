@@ -1,0 +1,291 @@
+@charset "UTF-8";
+
+
+
+@font-face {
+    font-family: 'fontelogo';/*nome da fonte*/
+    src: url("../_fonts/bubblegum-sans-regular.otf");/*caminho da fonte*/
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;    
+    text-align: justify;
+    background-color: #606060;
+    color: rgba(0, 0, 0, 1);
+    
+
+}
+div#interface {
+    width: 900px;
+    background-color: white;
+    margin: -20px auto 0px auto; /*centralizando a interface*/
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.505);
+
+
+}
+
+p {
+    text-indent: 50px;/*paragrafos*/ 
+    text-align: justify;
+
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    left: 780px;
+    top: 70px;
+}
+header#cabecalho {
+    border-bottom: 1px #606060 solid ; /*fazendo uma linha!!*/
+    height: 150px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;/*colocando a imagem no cabeçalho e não repetir*/
+    
+}
+header#cabecalho h1{
+    color: #606060;
+    font-family: 'fontelogo', sans-serif;
+    font-size: 30pt;
+    text-shadow: 2px 2px 2px black;
+    padding: 0px;
+    margin-bottom: 0px;/*margin de baixo*/
+}
+
+header#cabecalho h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;/*margin de cima*/
+}
+
+/*Formatação de imagens com legendas*/
+
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid write;
+    box-shadow: 1px 1px 4px black;
+
+
+}
+
+figure.foto-legenda img {
+
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color:rgba(0,0 ,0,.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+
+}
+
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+
+
+}
+
+/*Formatação do menu*/
+nav#menu {
+    display:block;
+}
+
+nav#menu ul {
+    list-style: none;/*tirando os marcadores*/
+    text-transform: uppercase;/*Letras em mauisculo*/
+    position: absolute; /*O bloco pode flutuar pela tela*/
+    top: -20px;
+    left: 450px;
+
+}
+
+nav#menu li{
+    display: inline-block;/*exibindo bloco na mesma linha*/
+    background-color: #ddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;/*deixar o hover mais lento*/
+}
+nav#menu li:hover {
+    background-color: #606060;
+}
+
+nav#menu h1 {
+    display: none;  /*escoder o nome MENU PRINCIPAL*/
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+nav#menu a:hover { /*mudado o hove "a" do link*/
+    color: white;
+    text-decoration: underline;
+}
+
+section#corpo { /*ESSA SECTION divide a pagina*/
+    display: block;/*para ser mostrado como bloco*/
+    width: 450px;
+    float: left;/*Flutuar para o lado esquedo*/ 
+    border-right: 1px solid #606060;
+    padding-right: 20px;
+
+}
+
+article#noticia-principal h2{
+    font-size: 12pt;
+    color: #606060;
+    background-color: #ddd;/*lembrar desta parte*/
+    padding: 5px 0px 5px 5px;
+    margin: 10px;
+    
+}
+
+header#cabecalho-artigo h1{
+    
+    font-size: 20pt;
+    font-family: 'fontelogo', sans-serif;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+.direita {
+    text-align: right;
+}
+header#cabecalho-artigo h2{
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin-top: 0px;
+
+}
+header#cabecalho-artigo h3{
+    font-size: 12pt;
+    color: #606060;
+
+}
+
+aside#lateral{
+    display: block;
+    width: 400px; /*largura do bloco*/
+    float: right; /*fluar para o lado direiro*/
+    background-color: #ddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0, .5);
+}
+
+aside#lateral h1{
+    font-family: 'fontelogo',sans-serif;
+    font-size: 20pt;
+    color:#606060;
+    margin-top: 0px;
+
+}
+
+aside#lateral h2{
+    background-color: #606060;
+    font-size: 15pt;
+    color: white;
+    padding: 5px;
+    
+
+}
+
+footer#rodape {
+    clear: both; /*mostrar o conteudo dento da divisão que foi feita ssdfsfsrfrsfsrfsrfrsfrfrsff*/
+    border-top: 1px solid #606060;
+    
+    
+}
+footer{
+    background-color: #cecece;
+    padding: 0px 10px 5px 10px;
+}
+
+footer#rodape p {
+    text-align: center;
+}
+footer#rodape a{
+    text-decoration: none;
+    color: black;
+}
+
+footer#rodape a:hover {
+    text-decoration: underline;
+}
+
+table{
+    border-spacing: 0px;/*tirar os espaços da tabela*/
+    margin-left: auto;/*usado os dois serve para centralizar*/
+    margin-right: auto;/*usado os dois serve para centralizar*/
+
+}
+
+table#tabela td,th {
+    border-collapse: collapse;
+    border: 2px solid #606060;
+    padding: 10px;
+    vertical-align:top;
+    
+}
+th {
+    color: #ffffff;
+    vertical-align: top;
+    text-align: center;
+    font-weight: bold;
+}
+
+td {
+    background-color: #cecece;
+        
+}
+
+table#tabela caption{
+    font-size: 13pt;
+    color: #888888;
+    font-weight: bolder;
+}
+
+table#tabela caption span{
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 10pt;
+    margin-top: 10px;
+
+}
+
+
+table th:nth-child(1n){
+    background-color: #606060;
+
+}
+
+video#sem{
+    display: block; 
+    position: relative; /**/
+    left: 75px;/* ou >>> margin: auto;*/
+    
+    
+}
